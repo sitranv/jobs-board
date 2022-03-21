@@ -89,7 +89,7 @@ public class JobDetailResource {
         return ResponseEntity.ok(this.jobDetailService.getRelatedJobs(hashtagArray, jobId));
     }
 
-    @PostMapping(value = "/ez-hire/cv", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
+    @PostMapping(value = "/fast-apply/cv", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
     public ResponseEntity<?> uploadCV(@RequestParam MultipartFile cv) throws IOException {
         return ResponseEntity.ok(this.rsService.cosineSimilarity(this.rsService.extractHashtags(cv)));
     }
