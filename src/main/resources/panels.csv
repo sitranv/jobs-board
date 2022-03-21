@@ -1,0 +1,7 @@
+job_role,image
+server,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp_v2/server.png
+bartender,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp_v2/bartender.png
+chef,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp_v2/chef.png
+cook,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp_v2/cook.png
+barista,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp_v2/barista.png
+manager,https://s3-us-west-2.amazonaws.com/edizeven-images/bourdain/hp/manager.png
