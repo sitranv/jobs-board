@@ -1,9 +1,7 @@
 package com.jobs.sitran.web;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.jobs.sitran.domain.Authority;
 import com.jobs.sitran.domain.Company;
-import com.jobs.sitran.domain.User;
 import com.jobs.sitran.exception.NotFoundException;
 import com.jobs.sitran.model.dto.UserDTO;
 import com.jobs.sitran.model.request.LoginRequest;
@@ -24,7 +22,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
@@ -82,33 +79,4 @@ public class AuthResource {
         return new ResponseEntity<>(response, httpHeaders, HttpStatus.OK);
     }
 
-//    static class JWTToken {
-//
-//        private String token;
-//
-//        @JsonProperty("user")
-//        private UserDTO user;
-//
-//        @JsonProperty("isHasCompany")
-//        private Boolean isHasCompany;
-//
-//        JWTToken(String token, UserDTO user, Boolean status) {
-//            this.token = token;
-//            this.user = user;
-//            this.isHasCompany = status;
-//        }
-//
-//        JWTToken(String token) {
-//            this.token = token;
-//        }
-//
-//        @JsonProperty("token")
-//        String getToken() {
-//            return token;
-//        }
-//
-//        void setToken(String token) {
-//            this.token = token;
-//        }
-//    }
 }
